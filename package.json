@@ -1,12 +1,12 @@
 {
-  "name": "escape-game",
-  "version": "0.0.1",
+  "name": "@sawa-zen/escape-game",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/escape-game.js",
   "scripts": {
     "start": "webpack --mode development --config webpack.dev.js --watch",
     "build": "webpack --mode production --config webpack.prod.js",
-    "postinstall": "npm run build"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

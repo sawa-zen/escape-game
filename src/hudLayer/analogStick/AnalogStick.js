@@ -9,7 +9,6 @@ class AnalogStick extends PIXI.Container {
     super();
 
     // アナログスティック
-    console.info(PixiAnalogStick);
     this._analogStick = new PixiAnalogStick();
     this._analogStick.alpha = 0.5;
     this._analogStick.on('move', this._onMoveStick);

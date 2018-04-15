@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import EventEmitter from 'eventemitter2';
 import GameLayer from './gameLayer/GameLayer';
 import HudLayer from './hudLayer/HudLayer';
