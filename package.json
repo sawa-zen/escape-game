@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --mode development --config webpack.dev.js --watch",
     "build": "webpack --mode production --config webpack.prod.js",
-    "prepublish": "npm run build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
