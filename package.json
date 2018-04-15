@@ -1,0 +1,43 @@
+{
+  "name": "escape-game",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/meteor-escape.js",
+  "scripts": {
+    "start": "webpack --mode development --config webpack.dev.js --watch",
+    "build": "webpack --mode production --config webpack.prod.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawa-zen/meteor-escape.git"
+  },
+  "author": "sawa-zen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sawa-zen/meteor-escape/issues"
+  },
+  "homepage": "https://github.com/sawa-zen/meteor-escape#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babelrc-rollup": "^3.0.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "eventemitter2": "^5.0.1",
+    "pixi-analog-stick": "^1.0.8",
+    "pixi.js": "^4.7.3",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "three": "^0.91.0",
+    "whatwg-fetch": "^2.0.4"
+  }
+}
