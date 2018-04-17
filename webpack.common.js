@@ -1,19 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-
 const projectRootPath = path.resolve(__dirname, './');
 const assetsPath = path.resolve(projectRootPath, './dist');
 
 module.exports = {
-  entry: {
-    index: `${__dirname}/src/index.js`,
-  },
-  plugins: [
-    new CleanWebpackPlugin([assetsPath], { root: projectRootPath }),
-    new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-  ],
+  entry: `${__dirname}/src/index.js`,
   output: {
     path: assetsPath,
     filename: 'escape-game.js',
